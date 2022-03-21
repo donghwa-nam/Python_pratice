@@ -1004,3 +1004,34 @@ QUIZ) 당신의 회사에서는 매주 1회 작성해야 하는 보고서가 있
 
 # 상속
 
+# 일반 유닛
+
+# class Unit:
+#         def __init__(self, name, hp):
+#                 self.name = name # 클래스 안에 들어가있는 name 같은 것을 멤버변수라고 한다
+#                 self.hp = hp
+                
+
+# # 공격 유닛
+
+# class AttackUnit(Unit):
+#         def __init__(self, name, hp, damage):
+#                 Unit.__init__(self, name, hp) # 상속 받은 부분
+#                 self.damage = damage
+
+#         def attack(self, location):
+#                 print("{0} : {1} 방향으로 적군을 공격 합니다. [공격력 {2}]"\
+#                         .format(self.name, location, self.damage)) # 클래스 안에서 메소드 앞에는 항상 self를 쓴다고 알아라
+
+#         def damaged(self, damage):
+#                 print("{0} : {1} 데미지를 입었습니다.".format(self.name,damage))
+#                 self.hp -= damage
+#                 print("{0} : 현재 체력은 {1} 입니다.".format(self.name, self.hp))
+#                 if self.hp <= 0:
+#                         print("{0} : 파괴되었습니다.".format(self.name))
+
+# firebat1 = AttackUnit("파이어뱃", 50, 16)
+# firebat1.attack("5시")
+
+# firebat1.damaged(25)
+# firebat1.damaged(25)
